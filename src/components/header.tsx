@@ -157,6 +157,18 @@ export default function Header() {
                                                 </a>
                                             </DropdownMenuItem>
                                             <DropdownMenuItem
+                                                onClick={() => {
+                                                    setDropdownOpen(false)
+                                                    navigate("/")
+                                                }}
+                                                className="cursor-pointer"
+                                            >
+                                                <div className="flex items-center gap-2 w-full">
+                                                    <HomeIcon />
+                                                    {t("BackToHome")}
+                                                </div>
+                                            </DropdownMenuItem>
+                                            <DropdownMenuItem
                                                 onClick={logout}
                                                 className="cursor-pointer"
                                             >
